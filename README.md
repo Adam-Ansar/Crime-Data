@@ -75,7 +75,7 @@ To get started with this project, follow the steps below to set up your local en
 
 ## Ethics Statement
 
-This project involves handling sensitive data on suicides related to guns. I are committed to handling this data respectfully and confidentially. Analysis is carried out with the view to understanding and addressing a critical public health issue, and not to harm or stigmatize any individuals or groups of individuals. Any conclusions and recommendations are presented in a manner that upholds the well-being and dignity of victims. I adhere to ethical values and norms so that the information is used responsibly and the privacy of individuals is maintained.
+This project involves handling sensitive data on suicides related to guns. I am committed to handling this data respectfully and confidentially. Analysis is carried out with the view to understanding and addressing a critical public health issue, and not to harm or stigmatize any individuals or groups of individuals. Any conclusions and recommendations are presented in a manner that upholds the well-being and dignity of victims. I adhere to ethical values and norms so that the information is used responsibly and the privacy of individuals is maintained.
 
 ## Resources
 
