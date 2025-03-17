@@ -54,10 +54,8 @@ To get started with this project, follow the steps below to set up your local en
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/Adam-Ansar/Crime-Data.git
-    cd Crime-Data
+    git clone https://github.com/Adam-Ansar/GunRelated-Suicide.git
     ```
-
 2. **Create a virtual environment** (optional but recommended):
     ```bash
     python -m venv venv
