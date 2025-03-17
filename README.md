@@ -1,75 +1,91 @@
 # ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-## Template Instructions
+# Gun-Related Suicide Analysis in the United States
 
-Welcome,
+## Project Overview
 
-This is the Code Institute student template for the Data Analytics capstone project. We have preinstalled all of the tools you need to get started. It's perfectly okay to use this template as the basis for your project submissions. Click the `Use this template` button above to get started.
+This project aims to analyze gun suicides in the US from a large dataset. The analysis aims at determining trends, patterns, and potential risk factors involved in such incidents. Information obtained in this analysis can be utilized in policy-making, public health intervention, and subsequent research.
 
-You can safely delete the Template Instructions section of this README.md file and modify the remaining paragraphs for your own project. Please do read the Template Instructions at least once, though! It contains some important information about the IDE and the extensions we use.
+Firearm suicide is a huge public health issue in the US, disproportionately adding to the total number of suicides. By employing varying criteria in such areas as demographics, geography of distribution, and timing trends, this research tries to advance understanding on underlying causes and possible precipitators for suicide by gun.
 
-## How to use this repo
+The project avails advanced data analysis techniques and visualization tools to present the findings in an intuitive and informative way. The ultimate goal is to contribute to framing effective strategies and policies for reducing gun-related suicides incidence and improving the overall public's health condition.
 
-1. Use this template to create your GitHub project repo. Click the Use this template button, then click Create a new repository.
+Key goals of the project are:
 
-1. Copy the URL of your repository to your clipboard.
+- Identifying at-risk demographic populations who are at greater risk of gun-related suicides.
+- Investigating geographic trends to determine areas of higher incidence rates.
+- Examining temporal patterns to determine if there are annual or seasonal fluctuations.
+- Investigating potential correlations of gun suicides with other socio-economic factors.
+- Providing informative insights and recommendations to policymakers, healthcare professionals, and researchers.
 
-1. In VS Code, select File - Open Folder.
+By these objectives, the project aims to find insights into the puzzling issue of gun suicides and help efforts to combat this public health issue.
 
-1. Select your vscode-projects folder, then click the Select Folder button on Windows, or Open button on Mac.
+## Dataset Explanation
 
-1. From the top menu in VS Code, select Terminal > New Terminal to open the terminal.
+The dataset employed here is a full dataset of gun death in the United States. It holds various attributes that provide information on each incident. The key columns in the dataset are:
 
-1. In the terminal, type git clone followed by the URL of your GitHub repository. Then hit Enter. This command will download all the files in your GitHub repository into your vscode-projects folder.
+- **Year**: The year of the incident.
+- **Month**: The month of the incident.
+- **Intent**: The reason of the gun death (e.g., Suicide, Homicide, Accidental, Undetermined).
+- **Police**: Whether the police officer was a participant in the incident.
+- **Sex**: The sex of the individual (M for male, F for female).
+- **Age**: The age of the individual at the time of death.
+- **Race**: The race of the individual (e.g., White, Black, Asian/Pacific Islander, Native American/Native Alaskan, Hispanic).
+- **Place**: Where the incident occurred (e.g., Home, Street, Other specified).
+- **Education**: The level of education of the individual (e.g., Less than HS, HS/GED, Some college, BA+).
 
-1. In VS Code, select File > Open Folder again.
+This dataset provides a rich source of data for research on trends and patterns in gun suicides, allowing an in-depth examination of demographic, geographic, and temporal dimensions. By applying this data, the project aims to uncover insights that can be applied to inform public health interventions and policy-making.
 
-1. This time, navigate to and select the folder for the project you just downloaded. Then, click Select Folder.
+## Libraries Used
 
-1. A virtual environment is necessary when working with Python projects to ensure each project's dependencies are kept separate from each other. You need to create your virtual environment, also called a venv, and then ensure that it is activated any time you return to your workspace.
-Click the gear icon in the lower left-hand corner of the screen to open the Manage menu and select Command Palette to open the VS Code command palette.
+The following libraries were used in this project:
 
-1. In the command palette, type: create environment and select Python: Create Environment…
+- **Pandas**: For data manipulation and analysis, providing powerful data structures and functions needed to clean and analyze the dataset.
+- **NumPy**: For numerical operations, enabling efficient computation and manipulation of numerical data.
+- **Matplotlib**: For creating static, animated, and interactive visualizations, helping to illustrate the findings clearly.
+- **Seaborn**: For statistical data visualization, offering attractive and inf
+ormative statistical graphics.
+- **Scikit-learn**: For machine learning and data mining, used to build predictive models and uncover patterns in the data.
+- **Statsmodels**: For statistical modeling and hypothesis testing, allowing for in-depth statistical analysis and validation of findings.
 
-1. Choose Venv from the dropdown list.
+## Installation and Setup
 
-1. Choose the Python version you installed earlier. Currently, we recommend Python 3.12.8
+To get started with this project, follow the steps below to set up your local environment:
 
-1. DO NOT click the box next to requirements.txt, as you need to do more steps before you can install your dependencies. Click OK.
+1. **Clone the repository**:
+    ```bash
+    git clone https://github.com/Adam-Ansar/Crime-Data.git
+    cd Crime-Data
+    ```
 
-1. You will see a .venv folder appear in the file explorer pane to show that the virtual environment has been created.
+2. **Create a virtual environment** (optional but recommended):
+    ```bash
+    python -m venv venv
+    source venv/bin/activate   # On Windows use `venv\Scripts\activate`
+    ```
 
-1. Important: Please add the .venv to your .gitignore file
+3. **Install the required libraries**:
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-1. Return to the terminal by clicking on the TERMINAL tab or click on the Terminal menu and choose New Terminal if no terminal is currently open.
+4. **Run the analysis**:
+    Follow the instructions in the project documentation to run the analysis scripts and visualize the results.
 
-1. In the terminal, use the command below to install your dependencies. This may take several minutes.
- `pip3 install -r requirements.txt`
 
-1. Open the jupyter_notebooks directory, and click on the notebook you want to open.
+## Ethics Statement
 
-1. Click the kernel button and choose Python Environments.
+This project involves handling sensitive data on suicides related to guns. I are committed to handling this data respectfully and confidentially. Analysis is carried out with the view to understanding and addressing a critical public health issue, and not to harm or stigmatize any individuals or groups of individuals. Any conclusions and recommendations are presented in a manner that upholds the well-being and dignity of victims. I adhere to ethical values and norms so that the information is used responsibly and the privacy of individuals is maintained.
 
-Note that the kernel says Python 3.12.2 as it inherits from the workspace, so it will be Python-3.12.2 as installed by our template. To confirm this, you can use `! python --version` in a notebook code cell.
+## Resources
 
-## Cloud IDE Reminders
+This project leverages various resources to ensure a comprehensive and accurate analysis:
 
-To log into the Heroku toolbelt CLI:
+- **Generative AI**: Utilized for data augmentation and generating insights from large datasets, enhancing the depth and breadth of the analysis, and to also upgrade existing code to further improve efficiency of the data analysis.
+- **Learning Management System (LMS) Content**: Leveraged content from Code Institute's LMS to guide the analysis process and ensure best practices in data science and ethical considerations. The LMS provided valuable resources and frameworks that were instrumental in shaping the methodology and approach of this project.
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In the terminal, run `heroku_config`
-5. Paste in your API key when asked
+By utilizing these resources, the project aims to provide a thorough and responsible analysis of gun-related suicides in the United States, contributing valuable insights to the field of public health. The combination of advanced analytical tools and ethical considerations ensures that the findings are both robust and respectful of the sensitive nature of the data.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+## Acknowledgements
 
-* Set the runtime.txt Python version to a [Heroku-22](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
-* The project was deployed to Heroku using the following steps.
-
-1. Log in to Heroku and create an App
-2. At the Deploy tab, select GitHub as the deployment method.
-3. Select your repository name and click Search. Once it is found, click Connect.
-4. Select the branch you want to deploy, then click Deploy Branch.
-5. The deployment process should happen smoothly if all deployment files are fully functional. Click now the button Open App on the top of the page to access your App.
-6. If the slug size is too large then add large files not required for the app to the .slugignore file.
+I would also like to extend my particular gratitude to Code Institute for providing the resources and assistance necessary to complete this project. Their comprehensive Learning Management System (LMS) and their expert support have been invaluable in informing our methodology and imposing the highest standards in our research. The knowledge and skills gained under their course have been instrumental in the success of this project.
